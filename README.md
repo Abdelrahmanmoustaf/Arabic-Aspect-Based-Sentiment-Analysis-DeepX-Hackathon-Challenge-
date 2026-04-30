@@ -1,5 +1,5 @@
 # Arabic-Aspect-Based-Sentiment-Analysis-DeepX-Hackathon-Challenge
-1. Project Overview
+#1. Project Overview
 This project implements an Arabic Aspect-Based Sentiment Analysis ABSA
 system that extracts:
 Aspects (e.g., food, service, price)
@@ -10,7 +10,7 @@ The system combines:
 🔹 Rule-based NLP
 🔹 Machine Learning TF IDF  Logistic Regression)
 🔹 Hybrid fallback strategy for robustness
-2.  Dataset Description
+#2.  Dataset Description
 Input Files
 train_path = "DeepX_train.xlsx"
 val_path   
@@ -26,7 +26,7 @@ aspect_sentiments
 star_rating
 platform
 business_category
-3.  Data Analysis
+#3.  Data Analysis
 Key Insights
 Presence of emoji-rich reviews
 Significant Franco-Arabic Arabizi) usage
@@ -39,7 +39,7 @@ Engineered Features
 has_emoji
 has_franco
 text_len
-4.  Preprocessing Pipeline
+#4.  Preprocessing Pipeline
 The preprocessing is one of the strongest parts of your solution.
 Steps:
 Emoji Handling
@@ -79,7 +79,7 @@ URLs, emails
 Tokenization
 Stopword Removal
 Light Stemming
-5.  Model Architecture
+#5.  Model Architecture
 🔷 Hybrid System
 A) Rule-Based System
 Aspect detection using keyword dictionary
@@ -110,7 +110,7 @@ Example:
 "food": "positive",
 "service": "negative"
 }
-3.  Model Performance
+6.  Model Performance
 Training Results
 Train Accuracy: 96.7%
 Validation Accuracy: 95.9%
@@ -125,7 +125,7 @@ Score
 71.1%
 Competition Score
 Pillar 1 20.85 / 30
-4. Performance Analysis
+7. Performance Analysis
 🔹 Strengths
 Excellent generalization (small gap between train & validation)
 Strong handling of:
@@ -142,7 +142,7 @@ Aspect ambiguity
 Limited labeled data per aspect
 Class imbalance
 Multi-label complexity
-5.  System Features
+8.  System Features
 Supports:
 Arabic text 
 Franco-Arabic Arabizi)
@@ -159,11 +159,11 @@ Optional star rating
 Output:
 Aspects
 Sentiments (table format)
-7.  Evaluation Methodology
+9.  Evaluation Methodology
 Metrics used:
 Exact Match Accuracy
 Jaccard Similarity
 Sentiment Accuracy
 F1 / Precision / Recall
-8.  Model Saving
+10.  Model Saving
 joblib.dump(model, "absa_model.joblib")
